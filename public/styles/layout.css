@@ -18,8 +18,22 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif; 
 }
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
+  /* align-content: flex-end; */
+  /* position: absolute; */
+  vertical-align: bottom;
+  width: 90%;
+  padding-top: 10px;
+  margin: auto;
+ }
+
+ .red
