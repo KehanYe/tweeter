@@ -32,3 +32,7 @@ form button{
 output.counter {
   font-family: "bungee", cursive;
 }
+
+.fontRed{
+  color: red;
+}

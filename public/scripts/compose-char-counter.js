@@ -5,9 +5,13 @@ $(document).ready(function() {
     const charRemaining = 140 - $length;
     // console.log(charRemaining)
     const $counter = $(this).siblings('.tweet-counter').children('.counter').html(charRemaining)
-    // console.log($counter)
+    console.log(typeof($counter))
     
-    
+    if(charRemaining < 0) {
+      $counter.addClass('fontRed')
+    } else {
+      $counter.removeClass('fontRed')
+    }
   })
   
 
