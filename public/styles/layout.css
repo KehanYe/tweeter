@@ -32,6 +32,7 @@ body {
   /* position: absolute; */
   vertical-align: bottom;
   width: 90%;
-  padding-top: 10px;
+  height: 100%;
+  padding-top: 140px 0 70px 0;
   margin: auto;
  }
