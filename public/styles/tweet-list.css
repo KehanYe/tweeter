@@ -1,4 +1,4 @@
-.tweetListArticle {
+.tweet-list-article {
   border: 5px solid black;
   display: flex;
   flex-direction: column;
@@ -6,20 +6,20 @@
   margin-top: 15px;
 }
 
-.tweetListArticle:hover {
+.tweet-list-article:hover {
 
   box-shadow: 10px 10px black;
 
   display: block;
 }
 
-.tweetListHeader {
+.tweet-list-header {
   display: flex;
   flex-direction: row;
 justify-content: space-between;
 }
 
-.tweetListFooter {
+.tweet-list-footer {
   border: none;
   border-top: 5px solid black;
   display: flex;
@@ -27,36 +27,30 @@ justify-content: space-between;
   justify-content: space-between;
 }
 
-.tweetListImage {
+.tweet-list-image {
   height: 50px;
   width: 50px;
 
 }
 
-.tweetListName {
+.tweet-list-name {
 flex-grow: 1;
 margin-left: 15px;
+
 }
 
-.tweetListTime {
-  display: flex;
-}
-
-.tweetListIcons {
+.tweet-list-time {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 
-
-
 }
 
-.tweetListIcons i{
-
+.tweet-list-icons i{
   margin-right: 5px;
 
 }
 
-.tweetListIcons.fas {
+.tweet-list-icons.fas {
   color: #4056A1 !important
 }

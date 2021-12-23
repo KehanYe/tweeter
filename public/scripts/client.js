@@ -35,24 +35,24 @@ $(document).ready(()=> {
   const createTweetElement = tweet => {
 
     const template = 
-    `<article class="tweetListArticle">
-      <header class="tweetListHeader">
-        <img class="tweetListImage" src="${tweet.user.avatars}" alt="user_image">
+    `<article class="tweet-list-article">
+      <header class="tweet-list-header">
+        <img class="tweet-list-image" src="${tweet.user.avatars}" alt="user_image">
   
-        <p class="tweetListName">${tweet.user.name}</p>
+        <p class="tweet-list-name">${tweet.user.name}</p>
         <p>${tweet.user.handle}</p>
       
       </header>
       <p>${tweet.content.text}</p>
-      <footer class="tweetListFooter">
+      <footer class="tweet-list-footer">
         <p class="tweetListTime">${timeago.format(tweet.content.created_at)}</p>
-        <div class="tweetListIcons"> 
+        <div class="tweet-list-icons"> 
           <i class="fas fa-flag"></i>
           <i class="fas fa-retweet"></i>
           <i class="fas fa-heart"></i>
       </div>
       </footer>
-    </article> `
+    </article>`
 
     return template;
 
@@ -63,11 +63,30 @@ $(document).ready(()=> {
     tweets.forEach(tweet => {
       const $tweet = createTweetElement(tweet);
       console.log($tweet);
-      $('.tweetList').append($tweet); // adds to page
+      $('.tweet-list').append($tweet); // adds to page
 
     }) 
   }
-
   renderTweets(tweetData);
 
+    $('.tweet-submit').on('button', (event) => {
+      event.preventDefault();
+      console.log('click', event.target)
+      $.ajax({
+        method: 'POST',
+        url: '/tweets',
+        data: $(event.target).serialize()
+      })
+      .done(() => {
+        $('textarea').val("");
+        console.log('ajax post done');
+      })
+
+      renderTweets(tweetData);
+
+    })
+
+    .fail((error) =>  console.log('fail to post', error))
+  
 })
+
