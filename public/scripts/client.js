@@ -38,10 +38,8 @@ $(document).ready(()=> {
     `<article class="tweet-list-article">
       <header class="tweet-list-header">
         <img class="tweet-list-image" src="${tweet.user.avatars}" alt="user_image">
-  
         <p class="tweet-list-name">${tweet.user.name}</p>
-        <p>${tweet.user.handle}</p>
-      
+        <p class="tweet-list-handle" >${tweet.user.handle}</p>
       </header>
       <p>${tweet.content.text}</p>
       <footer class="tweet-list-footer">
@@ -69,7 +67,7 @@ $(document).ready(()=> {
   }
   renderTweets(tweetData);
 
-    $('.tweet-submit').on('button', (event) => {
+    $('#submit-tweet').submit((event) => {
       event.preventDefault();
       console.log('click', event.target)
       $.ajax({
@@ -86,7 +84,25 @@ $(document).ready(()=> {
 
     })
 
-    .fail((error) =>  console.log('fail to post', error))
+    // .fail((error) =>  console.log('fail to post', error))
+
+    const loadTweets = () => {
+      $.ajax({
+        method: 'GET',
+        url: '/tweets',
+        success: function(tweets) {
+          renderTweets(tweets);
+          console.log(tweets);
+        },
+        error: function() { 
+          console.log("fail to get", error);
+        }
+      });
+    };
+
+    loadTweets();
+
+    
   
 })
 

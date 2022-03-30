@@ -1,10 +1,10 @@
-header {
+.profile-header{
   background-color: #f3b3ac;
   background-image: url(../images/billie-holiday.png);
   margin-top: 5em;
   font-weight: normal;
 
-  /* padding-top: 10em; */
+  padding-top: 1em;
   /* margin-bottom: 5em; */
   
   /* position: ; */
@@ -17,7 +17,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  /* align-content: center; */
 
   
 
