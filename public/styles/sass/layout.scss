@@ -16,9 +16,9 @@ html {
 
 body {
   margin: 0;
-  color: #1DA1F2;
+  color: #3d00a0;
   background-color: #eee;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*
@@ -31,4 +31,11 @@ body {
   background: #ffffff;
   margin: auto;
   padding: 100px 0 70px 0;
+ }
+
+ @media (max-width: 450px) {
+   main {
+    padding: 150px 0 70px 0;
+    width: 100%;
+   }
  }

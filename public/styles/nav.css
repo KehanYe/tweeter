@@ -1,43 +1,71 @@
-nav {
-  height: 120px;
-  color: #ffffff;
-  background-color: #4056A1;
+
+/*
+ * Global layout stuff
+ */
+
+#nav-bar {
   position: fixed;
-  z-index: 10;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 80px;
   width: 100%;
-
-}
-nav span {
+  background-color: #3d00a0;
+  color: #e8fdff;
+  padding: 0 2em;
   font-family: 'Bungee', cursive;
-  margin-left: 1.5em;
-  font-size: xx-large
 }
 
-nav div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 1.5em;
-  
+
+/*
+ * Additional CSS to style the logo (img)
+ */
+
+#nav-bar .logo {
+  float: left;
+  width: 80px;
+  height: 80px;
+
 }
 
-nav class {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+/*
+ * Additional CSS to style the header
+ */
+
+#nav-bar .header {
+  float: left;
+  margin-left: 10px;
+  font-size: 2em;
+  line-height: 2.5;
 }
 
-nav button {
-  background-color: #4056A1;
-  border: none;
-  color: white;
+/*
+ * Additional CSS to style the compose button
+ */
+
+#composeButton {
+  float: right;
+  margin-left: 10px;
+  font-size: 1.3em;
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #e7fdff;
+  color: #3d00a0;
 }
 
-.fas {
-  color: red;
-} 
+#composeButton > span {
+  float: left;
+  margin-right: 5px;
+}
+
+#composeButton > p {
+  float: rigth;
+  margin: 0;
+  display: inline-block;
+}
+
+#composeButton:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
