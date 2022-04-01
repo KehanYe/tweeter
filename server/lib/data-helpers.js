@@ -21,7 +21,28 @@ module.exports = function makeDataHelpers(db) {
         const sortNewestFirst = (a, b) => a.created_at - b.created_at;
         callback(null, db.tweets.sort(sortNewestFirst));
       });
-    }
+    },
 
+    updateTweet: function(tweet, callback) {
+
+      let id = tweet["_id"];
+      let likes = tweet["likes"];
+
+      db.collection("tweets").updateOne({
+        _id: ObjectID(id)
+      }, {
+        $set: {
+          "likes": likes
+        }
+      }, (err, result) => {
+
+        if (err) {
+          return callback(err);
+        }
+
+        callback(null, true);
+
+      });
+    }
   };
-}
+};

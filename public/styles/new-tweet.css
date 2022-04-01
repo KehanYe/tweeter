@@ -32,6 +32,9 @@
 form > input {
   float: left;
   margin-top: 3px;
+  font-family: 'Bungee', cursive;
+  color: #e8fdff;
+  background-color: #1DA1F2
 }
 
 textarea {

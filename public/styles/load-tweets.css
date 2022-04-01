@@ -9,7 +9,10 @@ article {
   border-radius: 4px;
 }
 
-
+article:hover {
+  box-shadow: 10px 10px black;
+  display: block;
+}
 /*
  * Additional CSS to style the header
  */
