@@ -83,3 +83,22 @@ article:hover .options{
   display: inline;
 }
 
+.options i:hover{
+  cursor: pointer;
+  color: rgb(255, 208, 0);
+}
+
+
+.heart {
+  color: black; }
+
+.heart:hover {
+  cursor: pointer;
+  color: blue; }
+
+.heartLiked {
+  color: blue; }
+
+.heartLiked:hover {
+  cursor: pointer;
+  color: black; }
