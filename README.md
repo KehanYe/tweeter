@@ -16,7 +16,7 @@ Tweeter is a simple, single-page Twitter clone, that uses HTML5, SASS, CSS3, JS,
 **List of Tweets with Hover Outline**
 !["Screenshot of the posted tweet with hover outline"](https://github.com/KehanYe/tweeter/blob/master/docs/text_HoverOutline.png)
 
-**Dependencies**
+## Dependencies
 
 - Express
 - Node 5.10.x or above
@@ -26,7 +26,21 @@ Tweeter is a simple, single-page Twitter clone, that uses HTML5, SASS, CSS3, JS,
 - mongodb
 
 
-**Getting Started**
+## Getting Started
 
 - Install all dependencies (using the `npm install` command).
 - Run the development web server (using the `npm run local` command).
+
+
+## RoadMap
+- [ ] URGENT! Fix placeholder for text area remaining visible after scrolling down 
+- [ ] Add css transition to button colour (ask Max)
+- [ ] CHALLENGE - Fix sever-side function tracking likes for each Tweet (data-helpers)
+- [ ] CHALLENGE - Incoporate removeEventListener() to prevent multiple likes for each Tweet
+- [ ] Add css transition for tweet.hover box with more subdued effect (recall button templates provided by Gonzo)
+- [ ] Increase visibility, specifically contrast, of text for tweets. Currently too small and too similar to background colour
+- [ ] Refactor CSS to use relative units (rem/em)
+- [ ] Add hover effect for Tweeter Logo with subtle black highlight
+- [ ] CHALLENGE - Incoporate rainbow hover effect onto one page element
+
+
