@@ -1,5 +1,6 @@
 article {
   margin: 2em;
+  word-wrap: break-word;
   border: 1px solid #e3e3e3;
   border-radius: 4px; }
   article header {
