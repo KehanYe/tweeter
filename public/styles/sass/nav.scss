@@ -1,10 +1,9 @@
-
 #nav-bar {
   position: fixed;
   top: 0;
   height: 80px;
   width: 100%;
-  background-color: #3d00a0;
+  background-color: #1DA1F2;
   color: #e8fdff;
   padding: 0 2em;
 
@@ -30,7 +29,8 @@
   margin: 10px;
   padding: 15px;
   background-color: #e7fdff;
-  color: #3d00a0;
+  transition: background 3s;
+  color: #1DA1F2;
 
   span {
     float: left;
@@ -44,6 +44,8 @@
 }
 
 #composeButton:hover {
+  border: 2.5px solid #000000;
+  margin: 9px;
   background-color: #ffffff;
   color: #000000;
   cursor: pointer;

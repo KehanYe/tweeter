@@ -41,6 +41,8 @@ article {
 
   footer {
     background-color: $background-color-header-footer;
+    transition: background 1s;
+    
     width: 100%;
     height: 35px;
     padding: 10px;
